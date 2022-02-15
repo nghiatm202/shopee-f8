@@ -1,0 +1,118 @@
+/* ! Mobile & Tablet */
+@media (max-width: 1023px) {
+  :root {
+    --navbar-height: 0px;
+    --header-height: 68px;
+  }
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .header__cart-list {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    width: 100%;
+  }
+
+  .header {
+    position: fixed;
+    z-index: 14;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .header__sort-bar {
+    display: flex;
+  }
+  .app__container {
+    margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+  }
+  .mobile-category {
+    display: block;
+  }
+  .header__sort-link {
+    font-size: 1.5rem;
+  }
+}
+/* ! Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  .header__cart {
+    width: 89px;
+    text-align: right;
+  }
+  .header-with-search {
+    margin: 0;
+  }
+  .header__cart-list::after {
+    right: 54px;
+    border-color: transparent;
+  }
+  .app__content {
+    padding-top: 2%;
+  }
+}
+/* ! Mobile */
+@media (max-width: 739px) {
+  body {
+    margin-top: 70px;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .header-with-search {
+    justify-content: space-between;
+  }
+  .header__cart,
+  .header__logo {
+    width: unset;
+  }
+  .header__search {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sort-bar-height);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0 8px;
+    display: none;
+  }
+  .header__search-history {
+    position: fixed;
+    top: calc(var(--header-height) + var(--header-sort-bar-height));
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 12%) 0px 3px 4px;
+  }
+  .pagination-item__link {
+    min-width: 36px;
+    font-size: 1.6rem;
+  }
+  .pagination-item {
+    margin: 0;
+  }
+  .app__container {
+    margin: 0 4px;
+  }
+  .header__mobile-search {
+    display: block;
+  }
+  .header__logo-img {
+    width: 130px;
+  }
+  .footer__content {
+    padding: 0 16px;
+  }
+  .header__cart-list::after {
+    border-color: transparent;
+  }
+  .app__content {
+    margin-top: 18px;
+  }
+}
+/* ! Iphone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation: portrait) {
+}
